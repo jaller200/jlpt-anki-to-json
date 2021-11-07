@@ -1,0 +1,33 @@
+{
+  "name": "jlpt-anki-to-json",
+  "version": "1.0.0",
+  "description": "A simple parser converting the Anki JLPT decks from Jonathan Waller (http://www.tanos.co.uk/jlpt/) to a JSON key-value JSON format",
+  "main": "dist/index.js",
+  "bin": {
+    "jlpt-anki-to-json": "./dist/index.js"
+  },
+  "scripts": {
+    "watch": "babel -w src/ -d dist/",
+    "build": "babel src/ -d dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "anki",
+    "jlpt",
+    "japanese"
+  ],
+  "author": "Jonathan Hart",
+  "license": "MIT",
+  "dependencies": {
+    "anki-to-json": "^1.0.3",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0"
+  }
+}
