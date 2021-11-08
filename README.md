@@ -3,11 +3,11 @@ This is a simple library I've created for taking Jonathan Waller's JLPT Anki fil
 
 All this library will do is take his Kanji/Vocab Anki files and convert them to two JSON files: `jlpt-kanji.json` and `jlpt-vocab.json`.
 
-**Jonathan Waller's Site**: http://www.tanos.co.uk/jlpt/
-
 # Anki Conversion
 In order to properly use his tool, you need to download Jonathan Waller's Anki decks, which use the Anki 1.0 format, and convert them to
 the Anki 2.0 APKG format.
+
+**Jonathan Waller's Site**: http://www.tanos.co.uk/jlpt/
 
 ***NOTE**: I will add photos soon...*
 
