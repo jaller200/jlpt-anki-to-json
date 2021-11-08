@@ -28,7 +28,10 @@ const readNotes = async (filePath) => {
  * @param {string} outputDir The output directory
  * @param {string} ankiDir The directory with the Anki files
  */
-export const generateJson = async (outputDir, ankiDir) => {
+export const generateJson = async (ankiDir, options) => {
+
+  // Get our output directory
+  const outputDir = options['output-dir'];
 
   // Create our Kanji list
   const kanjiList = new Map();
@@ -54,9 +57,7 @@ export const generateJson = async (outputDir, ankiDir) => {
   // Create the Kanji JSON file
   if (kanjiList.size > 0) {
     if (isWritableDirectory(outputDir)) {
-      writeJsonFile(outputDir + '/jlpt-kanji.json', {
-        kanji: kanjiList
-      });
+      writeJsonFile(outputDir + '/jlpt-kanji.json', kanjiList);
       console.info(`Wrote ${kanjiList.size} kanji to ${outputDir}/jlpt-kanji.json`);
     }
     else {
@@ -70,9 +71,7 @@ export const generateJson = async (outputDir, ankiDir) => {
   // Create the Vocab JSON file
   if (vocabList.size > 0) {
     if (isWritableDirectory(outputDir)) {
-      writeJsonFile(outputDir + '/jlpt-vocab.json', {
-        vocab: vocabList
-      });
+      writeJsonFile(outputDir + '/jlpt-vocab.json', vocabList);
       console.info(`Wrote ${vocabList.size} kanji to ${outputDir}/jlpt-vocab.json`);
     }
     else {
