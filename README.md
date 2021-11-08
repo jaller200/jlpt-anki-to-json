@@ -19,9 +19,9 @@ Once these decks are imported, you can export them as APKG decks by click on the
 Click `Export...` and place everything in the same folder. Rename all the APKG files to use the following structure:
 
 * **Kanji Deck**: `n<level>-kanji.apkg` 
-    * *(i.e. `n5-kanji.apkg`)*
+    * *i.e. `n5-kanji.apkg`*
 * **Vocab Deck**: `n<level>-vocab.apkg`
-    * *(i.e. `n5-vocab.apkg`)*
+    * *i.e. `n5-vocab.apkg`*
 
 You will simply pass the folder with these files to the program and it will auto-import the APKG files using these names.
 
