@@ -16,6 +16,8 @@ In order to properly use his tool, you first need to download Jonathan Waller's 
 
 **Jonathan Waller's Site**: http://www.tanos.co.uk/jlpt/
 
+*NOTE: Use the `-kanji-vocab-eng.anki` and `-kanji-char-eng.anki` files from each N-level page*
+
 ## Import Anki 1.0
 First, [download Anki](https://apps.ankiweb.net/). I've tested this with `Version 2.1.44`, but if the conversion plugin below allows, you can try the latest version. 
 
