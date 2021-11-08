@@ -39,6 +39,7 @@ You will simply pass the folder with these files to the program and it will auto
 To run this, first clone the directory and run `npm install` followed by `npm run build`.
 
     git clone https://github.com/jaller200/jlpt-anki-to-json.git
+    cd jlpt-anki-to-json
     npm install
     npm run build
 
