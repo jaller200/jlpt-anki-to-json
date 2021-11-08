@@ -9,7 +9,7 @@ import { isReadableFile, isWritableDirectory, writeJsonFile } from './file_utils
  */
 const readNotes = async (filePath) => {
   try {
-    if (!isReadableFile) {
+    if (!isReadableFile(filePath)) {
       console.warn(`Unable to read file ${filePath}`);
       return [];
     }
@@ -47,6 +47,9 @@ export const generateJson = async (outputDir, ankiDir) => {
   (await readNotes(ankiDir + '/n3-vocab.apkg')).forEach(note => vocabList.set(note.front, 3));
   (await readNotes(ankiDir + '/n2-vocab.apkg')).forEach(note => vocabList.set(note.front, 2));
   (await readNotes(ankiDir + '/n1-vocab.apkg')).forEach(note => vocabList.set(note.front, 1));
+
+  // Write a new line
+  console.log();
 
   // Create the Kanji JSON file
   if (kanjiList.size > 0) {
