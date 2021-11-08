@@ -48,7 +48,7 @@ To run, simply use the following command in the same folder:
 Set the output directory to where you want to place the generated JSON files, and set the Anki directory to where you saved all the APKG files.
 
 # Credits
-This library makes use of a modified version of the CraigglesO's `anki-to-json` Node library, which can be found [here](https://github.com/CraigglesO/anki-to-json/) under the ISC License.
+This library makes use of a modified version of CraigglesO's `anki-to-json` Node library, which can be found [here](https://github.com/CraigglesO/anki-to-json/) under the ISC License.
 
 # License
 This project is licensed under the MIT license and is free for anyone to use.
