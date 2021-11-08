@@ -32,7 +32,7 @@ Finally, click `Export...` and place everything in the same folder. Rename all t
 
 You will simply pass the folder with these files to the program and it will auto-import the APKG files using these names.
 
-****Example**: The N5 Kanji deck should be renamed to `n5-kanji.apkg`.*
+***Example**: The N5 Kanji deck should be renamed to `n5-kanji.apkg`.*
 
 # Usage
 To run this, first clone the directory and run `npm install` followed by `npm build`.
