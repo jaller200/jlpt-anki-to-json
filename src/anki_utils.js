@@ -16,7 +16,7 @@ import * as sqlite from 'sqlite';
  * 
  * @async
  * @param {string} inputFile The input file
- * @returns {[{ front: string, back: string }]} The Anki notes as JSON
+ * @returns {Promise} The Anki notes as JSON
  */
 export const readAnkiNotes = async (inputFile) => {
 
