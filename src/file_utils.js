@@ -35,7 +35,8 @@ export const readJsonFile = (filePath) => {
   try {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
   }
-  catch {
+  catch (error) {
+    console.error('Unable to read JSON file: ', error);
     return null;
   }
 }
