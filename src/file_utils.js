@@ -48,7 +48,7 @@ export const isWritableDirectory = (dirPath) => {
  */
 export const readJsonFile = (filePath) => {
   try {
-    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   }
   catch (error) {
     console.error('Unable to read the JSON file: ', error);
@@ -61,11 +61,12 @@ export const readJsonFile = (filePath) => {
  * 
  * @param {string} filePath The file path
  * @param {object} data The data
+ * @param {boolean} prettyPrint Whether to pretty-print the data
  * @returns {bool} Whether the data was written successfully
  */
-export const writeJsonFile = (filePath, data) => {
+export const writeJsonFile = (filePath, data, prettyPrint) => {
   try {
-    fs.writeFileSync(filePath, JSON.stringify(data));
+    fs.writeFileSync(filePath, JSON.stringify(data, null, prettyPrint ? 2 : undefined));
     return true;
   }
   catch (error) {
