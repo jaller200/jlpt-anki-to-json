@@ -3,7 +3,6 @@ This is a simple library I've created for taking Jonathan Waller's JLPT Anki fil
 
 All this library will do is take his Kanji/Vocab Anki files and convert them to two JSON files: `jlpt-kanji.json` and `jlpt-vocab.json`.
 
-## Source
 **Jonathan Waller's Site**: http://www.tanos.co.uk/jlpt/
 
 ## Credits
