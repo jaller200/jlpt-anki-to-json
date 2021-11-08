@@ -9,7 +9,7 @@ All this library will do is take his Kanji/Vocab Anki files and convert them to 
 In order to properly use his tool, you need to download Jonathan Waller's Anki decks, which use the Anki 1.0 format, and convert them to
 the Anki 2.0 APKG format.
 
-**NOTE**: I will add photos soon...
+***NOTE**: I will add photos soon...*
 
 ## Import Anki 1.0
 To do this, first download the [latest version of Anki](https://apps.ankiweb.net/). You will need to use [a provided plugin](https://ankiweb.net/shared/info/175027074) to import the Anki 1.0 format into Anki 2.1+.
@@ -31,6 +31,8 @@ Finally, click `Export...` and place everything in the same folder. Rename all t
 * **Vocab Deck**: `n<level>-vocab.apkg`
 
 You will simply pass the folder with these files to the program and it will auto-import the APKG files using these names.
+
+****Example**: The N5 Kanji deck should be renamed to `n5-kanji.apkg`.*
 
 # Usage
 To run this, first clone the directory and run `npm install` followed by `npm build`.
