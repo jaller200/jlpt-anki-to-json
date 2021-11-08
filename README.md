@@ -1,6 +1,16 @@
 # jlpt-anki-to-json
 This is a simple library I've created for taking [Jonathan Waller's JLPT Anki files](http://www.tanos.co.uk/jlpt/) and converting them to a common JSON key-value format.
 
+Both vocab and kanji decks will be converted to the following structure:
+
+    {
+        [key: string]: int
+    }
+
+Where the key is the **Kanji or Vocab (UTF-8)** and the integer value is the **JLPT Level (1-5)**.
+
+
+
 # Anki Conversion
 In order to properly use his tool, you first need to download Jonathan Waller's Anki decks, which use the Anki 1.0 format, and convert them to the Anki 2.0 APKG format.
 
