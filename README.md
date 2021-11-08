@@ -41,17 +41,11 @@ To run this, first clone the directory and run `npm install` followed by `npm bu
     npm install
     npm build
 
-After this, download the Anki files from Jonathan Waller's site (both the `-vocab-kanji-eng.anki` and `-kanji-char-eng.anki` files for
-each level) and place them all in one folder, renaming them with the following structure:
-
-* **Kanji Anki Files**: Rename to `n<level>-kanji.apkg`
-* **Vocab Anki Files**: Rename to `n<level>-vocab.apkg`
-
 This will generate a `dist/` folder. To run, simply use the following command:
 
     node . <ouput_dir> <anki_dir>
 
-This will generate the files if possible, using the following format:
+Set the output directory to where you want to place the generated JSON files, and se the Anki directory to where you saved all the APKG files.
 
 # Credits
 This library makes use of a modified version of the CraigglesO's `anki-to-json` Node library, which can be found [here](https://github.com/CraigglesO/anki-to-json/) under the ISC License.
