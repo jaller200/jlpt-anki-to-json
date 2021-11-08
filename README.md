@@ -40,6 +40,7 @@ To run this, first clone the directory and run `npm install` followed by `npm ru
 
     git clone https://github.com/jaller200/jlpt-anki-to-json.git
     cd jlpt-anki-to-json/
+    
     npm install
     npm run build
 
