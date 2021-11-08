@@ -41,7 +41,7 @@ To run this, first clone the directory and run `npm install` followed by `npm bu
     npm install
     npm build
 
-This will generate a `dist/` folder. To run, simply use the following command:
+To run, simply use the following command in the same folder:
 
     node . <ouput_dir> <anki_dir>
 
